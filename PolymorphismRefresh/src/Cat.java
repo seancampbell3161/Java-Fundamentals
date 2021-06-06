@@ -1,4 +1,4 @@
-public class Cat implements Animal {
+public class Cat extends Animal implements Pet {
 
     public void eat() {
         System.out.println("The cat eats");
@@ -6,5 +6,13 @@ public class Cat implements Animal {
 
     public void run() {
         System.out.println("The cat runs");
+    }
+
+    public void isNice() {
+        System.out.println("The cat purrs");
+    }
+
+    public void fetch() {
+        System.out.println("The cat fetches");
     }
 }
